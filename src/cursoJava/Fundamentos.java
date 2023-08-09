@@ -33,7 +33,7 @@ public class Fundamentos {
         i--;
         System.out.println("i--          | i = " + i);
 
-        System.out.println("----------------------------------------\nEstruturas de controle: \n\n1. Condicional\nExemplo 1 - uso do 'if':");
+        System.out.println("----------------------------------------\nEstruturas de controle: \n\n1) Condicional\nExemplo 1 - uso do 'if':");
         if (sexo == 'M') {
             System.out.println("Alistamento militar obrigatório.");
         }
@@ -69,5 +69,33 @@ public class Fundamentos {
             default:
                 System.out.println("Opção inválida");
         }
+
+        System.out.println("\n2) Repetição\nExemplo 5 - uso do 'for':");
+        for (int j = 10; j > 0; j--) {
+            System.out.println(j);
+        }
+
+        System.out.println("\nExemplo 6 - Tabuada");
+        for (int tabuada = 0; tabuada <= 10; tabuada++) {
+            System.out.println();
+            for (int valor = 0; valor <= 10; valor++) {
+                System.out.println(tabuada + " x " + valor + " = " + (tabuada*valor));
+            }
+        }
+
+        System.out.println("\nExemplo 7 - Uso da estrutura 'while'");
+        int contador = 1;
+        while (contador <= 10) {
+            System.out.println(contador);
+            contador++;
+        }
+
+        System.out.println("\nExemplo 8 - Uso da estrutura 'do while'");
+        char novoJogo;
+        do {
+            System.out.println("Deseja jogar novamente (s/n)?");
+            novoJogo = 'n';
+        } while (novoJogo == 's');
+        System.out.println("Game over!");
     }
 }
