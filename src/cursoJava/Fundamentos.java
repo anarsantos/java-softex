@@ -32,5 +32,42 @@ public class Fundamentos {
         System.out.println("i++          | i = " + i);
         i--;
         System.out.println("i--          | i = " + i);
+
+        System.out.println("----------------------------------------\nEstruturas de controle: \n\n1. Condicional\nExemplo 1 - uso do 'if':");
+        if (sexo == 'M') {
+            System.out.println("Alistamento militar obrigatório.");
+        }
+
+        System.out.println("\nExemplo 2 - uso do 'if' e 'else':");
+        if (idade < 18) {
+            System.out.println("Menor de idade.");
+        } else {
+            System.out.println("Maior de idade.");
+        }
+
+        System.out.println("\nExemplo 3 - uso do 'else if':");
+        if (idade < 16) {
+            System.out.println("Proibido votar.");
+        } else if (idade >= 18 && idade <= 70) {
+            System.out.println("Voto obrigatório.");
+        } else {
+            System.out.println("Voto facultativo.");
+        }
+
+        System.out.println("\nExemplo 4 - uso do 'switch case':\n1. Cadastro de clientes\n2. Cadastro de usuários\n3. Relatórios");
+        int opcao = 4;
+        switch (opcao) {
+            case 1:
+                System.out.println("Clientes");
+                break;
+            case 2:
+                System.out.println("Usuários");
+                break;
+            case 3:
+                System.out.println("Relatórios");
+                break;
+            default:
+                System.out.println("Opção inválida");
+        }
     }
 }
