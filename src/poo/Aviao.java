@@ -6,4 +6,9 @@ public class Aviao extends Carro {
     void aterrizar() {
         System.out.println("---------___________");
     }
+
+    //Polimorfismo - modificar/sobrescrever o método acelerar
+    void acelerar() {
+        System.out.println("__________-----------");
+    }
 }
