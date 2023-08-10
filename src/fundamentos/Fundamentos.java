@@ -1,4 +1,4 @@
-package cursoJava;
+package fundamentos;
 
 public class Fundamentos {
     public static void main(String[] args) {
@@ -75,7 +75,7 @@ public class Fundamentos {
             System.out.println(j);
         }
 
-        System.out.println("\nExemplo 6 - Tabuada");
+        System.out.println("\nExemplo 6 - Tabuada do 0 ao 10");
         for (int tabuada = 0; tabuada <= 10; tabuada++) {
             System.out.println();
             for (int valor = 0; valor <= 10; valor++) {
