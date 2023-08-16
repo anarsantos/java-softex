@@ -18,12 +18,18 @@ public class JokenPo {
     public static void main(String[] args) {
         // variáveis
         int jogador, computador;
-
         Scanner teclado = new Scanner(System.in);
+
         System.out.print("-----------JokenPô-----------\n1. Pedra\n2. Papel\n3. Tesoura\nDigite a opção desejada: ");
+        jogador = teclado.nextInt();
+
+        //tratamento de número inválido
+        do {
+              System.out.print("Opção inválida! Digite novamente: ");
+              jogador = teclado.nextInt();
+        } while (jogador < 1 || jogador > 3);
 
         //lógica do jogador
-        jogador = teclado.nextInt();
         System.out.println("");
         switch (jogador) {
             case 1:
@@ -34,9 +40,6 @@ public class JokenPo {
                 break;
             case 3:
                 System.out.println("Jogador escolheu TESOURA.");
-                break;
-            default:
-                System.out.println("Opção inválida.");
         }
 
         //lógica do computador
@@ -54,6 +57,7 @@ public class JokenPo {
                 break;
             case 3:
                 System.out.println("Computador escolheu TESOURA.");
+                break;
             default:
                 System.out.println("Opção inválida.");
         }
